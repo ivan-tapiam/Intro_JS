@@ -21,28 +21,27 @@
         <div class="card-body">
           <h5 class="card-title" style="text-align: center;">Laptop Gamer AMD</h5>
 
-          <form onsubmit="
+          <form onsubmit="compra(); event.preventDefault() "> <!--Funcion para tomar los datos del formulario-->
 
-          
-          ">
             <div class="mb-3">
               <input type="number" class="form-control" id="cantidad">
             </div>
             
             <div class="mb-3">
               <input type="text" class="form-control" id="text-color">
-            </div>
-          </form> 
+            </div> 
 
-          <p class="card-text"></p>
+          <p class="card-text"></p> <!--Texto ingresado desde JS-->
           
-          <a href="#" class="btn btn-warning">Calcular Total</a>
-        
+          <button type="submit" class="btn btn-warning">Calcular Total</button>        
+          </form>
         </div>
       </div>
 
       <div class="totales">
-        <div class="total">Total</div>
+        <div class="total">
+          Total<input  class="form-control" id="total" disabled>
+        </div>
         <div class="cantidad">Cantidad</div>
         <div class="color">Color</div>
       </div>
